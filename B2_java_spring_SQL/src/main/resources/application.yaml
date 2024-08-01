@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /identity
+spring:
+
+  datasource:
+    url: "jdbc:mysql://localhost:3306/user-management"
+    username: root
+    password: Quochuy2610@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate.transaction.jta.platform: org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform
+    hibernate:
+      ddl-auto: update
+    show-sql: true
